@@ -44,6 +44,7 @@ body {
   color: white;
   font-size: 2rem;
   cursor: pointer;
+  display: flex;
 }
 
 .nav-links {
@@ -122,4 +123,26 @@ Do not delete any of the above code. */
 .layout-wrapper{
   flex-direction:column;
 }
-  
+
+.hamburger-icon{
+  display: block;
+}
+
+.nav-links{
+  display: none;
+  background-color: #34495e;
+  position: absolute;
+  top: 50;
+  right: 0;
+  padding: 10px 0px;
+  width: 150px;
+}
+
+.nav-links li{
+  margin: 10px 0px;
+}
+
+.menu-container:hover .nav-links{
+  display: flex;
+  flex-direction: column;
+}
